@@ -1,0 +1,502 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+/* ---------------------------------------------------------HEAD START'S---------------------------------------------- */
+#head {
+  width: 100%;
+  min-height: 100vh;
+  background: url("./images/banner.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border: 2px solid black;
+}
+/* ---------------------------------------------------------NAVBAR START'S---------------------------------------------- */
+#head nav {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+  /* border: 2px solid white; */
+  width: 100%;
+  height: 10vh;
+  /* background: transparent; */
+  box-shadow: 0px 10px 10px rgba(122, 82, 82, 0.1);
+  transition: 0.5s;
+}
+#head nav #logo {
+  color: #fff;
+  /* color: black; */
+  position: relative;
+  font-size: 2em;
+  font-weight: 700;
+  text-transform: uppercase;
+  /* border: 2px solid orange; */
+  background: transparent;
+  cursor: pointer;
+  transition: 0.5s;
+}
+#head nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 2px solid purple; */
+  margin-right: 25px;
+}
+#head nav ul .nav_link {
+  list-style: none;
+  margin-left: 15px;
+}
+#head nav ul .nav_link a {
+  text-decoration: none;
+  color: #fff;
+  /* color: black; */
+  background: transparent;
+  padding: 10px;
+  font-size: 1em;
+  font-weight: 600;
+}
+#btn {
+  background: white;
+  border: 2px solid white;
+  border-radius: 50%;
+  margin-left: 10px;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  font-weight: 600;
+  cursor: pointer;
+}
+/* ---------------------------------------------------------NAVBAR END'S---------------------------------------------- */
+
+/* ---------------------------------------------------------HEAD-TXT START'S---------------------------------------------- */
+#head-txt {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-flow: column;
+  width: 50vw;
+  height: 45vh;
+  /* border: 2px solid white; */
+  margin: 60px;
+  margin-top: 28vh;
+  padding: 30px;
+}
+#head-txt h3 {
+  color: #fff;
+  font-size: 2em;
+  margin: 5px;
+}
+#head-txt h1 {
+  margin: 5px;
+  color: #fff;
+  font-size: 4em;
+}
+#head-txt h4 {
+  margin: 5px;
+  color: #fff;
+  font-size: 1.2em;
+}
+#head-txt a {
+  display: inline-block;
+  text-align: center;
+  justify-items: center;
+  color: #fff;
+  background: rgb(11, 142, 218);
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 700;
+  height: 40px;
+  /* border: 2px solid green; */
+  width: 120px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 5px;
+  transition: 0.25s;
+}
+#head-txt a:hover {
+  width: 130px;
+  height: 40px;
+}
+
+/* ---------------------------------------------------------HEAD-TXT END'S---------------------------------------------- */
+/* ---------------------------------------------------------HEAD END'S-------------------------------------------------- */
+
+/* ---------------------------------------------------------ABOUT START'S-------------------------------------------------- */
+#about-container {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  /* border: 2px solid green; */
+}
+#about-container h2 {
+  font-size: 2.5em;
+  font-weight: 700;
+  color: black;
+  margin: 10px;
+  margin-top: 30px;
+  padding: 10px;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+#about-lyt {
+  display: grid;
+  grid-template-columns: 35vw 35vw;
+  grid-template-rows: 50vh;
+  column-gap: 2vw;
+}
+#about-lyt #span1 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+#about-lyt #span2 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+#span1 h4 {
+  font-size: 1.5em;
+  font-weight: 600;
+  text-align: left;
+  margin: 5px;
+}
+#span1 p {
+  font-size: 1em;
+  font-weight: 400;
+  text-align: left;
+  margin: 10px;
+  margin-top: 15px;
+  margin-left: 0px;
+}
+#span2 img {
+  display: inline-block;
+  width: 38vw;
+  height: 44vh;
+}
+
+/* ---------------------------------------------------------ABOUT END'S-------------------------------------------------- */
+
+/* ---------------------------------------------------------OUR SERVICES START'S-------------------------------------------------- */
+#service {
+  background: black;
+  width: 100%;
+  height: 114vh;
+  /* border: 2px solid white; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  margin-top: 10vh;
+}
+#service h2 {
+  color: #fff;
+  font-size: 2.5em;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 0x;
+  padding: 0px;
+}
+#service #p1 {
+  margin-top: 0px;
+  margin-bottom: 15px;
+  padding: 5px;
+  color: #fff;
+  font-size: 1.5em;
+  font-weight: 400;
+  text-align: center;
+}
+#service-lyt {
+  display: grid;
+  grid-template-columns: 25vw 25vw 25vw;
+  grid-template-rows: 35vh 35vh;
+  column-gap: 5vw;
+  row-gap: 5vh;
+}
+#s-box1 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+#s-box2 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+#s-box3 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+#s-box4 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+#s-box5 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+#s-box6 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+.service-box {
+  background: rgba(255, 255, 255, 0.1);
+  /* border: 2px solid red; */
+  cursor: pointer;
+}
+.service-box:hover {
+  background: #1a9ed4;
+}
+.service-box h3 {
+  font-size: 1.5em;
+  text-align: center;
+  color: #fff;
+  font-weight: 500;
+  margin: 5px;
+  padding: 5px;
+}
+.service-box p {
+  font-size: 1em;
+  text-align: center;
+  color: #fff;
+  letter-spacing: 1px;
+  font-weight: 400;
+}
+.service-box img {
+  display: block;
+  width: 80px;
+  height: 80px;
+  margin: auto;
+  margin-top: 5px;
+  filter: invert(1);
+}
+.service-box:hover img {
+  width: 100px;
+  height: 100px;
+}
+
+/* ---------------------------------------------------------OUR SERVICES END'S-------------------------------------------------- */
+
+/* ---------------------------------------------------------OUR WORK START'S---------------------------------------------------- */
+#work {
+  width: 95vw;
+  height: 210vh;
+  /* border: 2px soid blue; */
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  margin: 10px;
+}
+#work h2 {
+  font-size: 2.5em;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 1px;
+  margin: 5px;
+  margin-top: 15px;
+}
+#work p {
+  font-size: 1.5em;
+  font-weight: 400;
+  text-align: center;
+  margin: 5px;
+}
+#work-lyt {
+  display: grid;
+  grid-template-columns: 35vw 35vw;
+  grid-template-rows: 70vh 70vh;
+  column-gap: 10vw;
+  row-gap: 30vh;
+}
+#work-lyt .work-box a img {
+  display: inline-block;
+  width: 40vw;
+  height: 80vh;
+  cursor: pointer;
+}
+/* #viewmore {
+  display: inline-block;
+  text-align: center;
+  color: #fff;
+  background: rgb(11, 142, 218);
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 700;
+  height: 60px;
+  border: 2px solid green;
+  width: 150px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+} */
+/* ---------------------------------------------------------OUR WORK END'S---------------------------------------------------- */
+/* ---------------------------------------------------------CONTACT START'S---------------------------------------------------- */
+#contact {
+  width: 98.5vw;
+  height: 90vh;
+  background: black;
+  /* border: 2px solid red; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+}
+#contact h2 {
+  font-size: 2.5em;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 1px;
+  margin: 5px;
+  margin-top: 25px;
+  padding: 5px;
+}
+#contact p {
+  font-size: 1.5em;
+  font-weight: 400;
+  color: #fff;
+  margin: 5px;
+  padding: 5px;
+}
+#contact-lyt {
+  display: grid;
+  grid-template-columns: 40vw 40vw;
+  column-gap: 10vw;
+  grid-template-rows: 70vh;
+}
+#cnt1 {
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  align-items: flex-start;
+}
+#cnt1 span {
+  margin: 5px;
+  padding: 5px;
+  text-align: left;
+}
+#cnt1 h4 {
+  margin: 2px;
+  text-align: left;
+  font-size: 2em;
+  font-weight: 600;
+  cursor: pointer;
+  color: #fff;
+}
+#cnt1 span h5 {
+  margin: 2px;
+  text-align: left;
+  font-size: 1.5em;
+  font-weight: 300;
+  color: skyblue;
+  cursor: pointer;
+}
+#cnt2 {
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  align-items: flex-start;
+}
+#cnt1 span p {
+  cursor: pointer;
+  margin: 2px;
+  text-align: left;
+  font-size: 1.5em;
+  font-weight: 300;
+  color: #fff;
+}
+#cnt2 h4 {
+  margin: 2px;
+  text-align: left;
+  font-size: 2em;
+  font-weight: 600;
+  cursor: pointer;
+  color: #fff;
+}
+#text1 {
+  width: 35vw;
+  height: 8vh;
+  color: #fff;
+  background: black;
+  font-size: 1em;
+  font-weight: 300;
+  margin: 10px;
+  padding: 10px;
+  /* border: 2px solid rgb(31, 28, 28); */
+  text-align: left;
+  border-radius: 3px;
+}
+#text2 {
+  margin: 10px;
+  padding: 10px;
+  width: 35vw;
+  height: 10vh;
+  color: #fff;
+  background: black;
+  font-size: 1em;
+  font-weight: 300;
+  /* border: 2px solid rgb(31, 28, 28); */
+  border-radius: 3px;
+  text-align: left;
+}
+#text3 {
+  margin: 10px;
+  padding: 10px;
+  width: 35vw;
+  height: 20vh;
+  color: #fff;
+  background: black;
+  font-size: 1em;
+  font-weight: 300;
+  /* border: 2px solid rgb(31, 28, 28); */
+  border-radius: 3px;
+  text-align: left;
+}
+#cnt2 a {
+  display: inline-block;
+  text-align: center;
+  justify-items: center;
+  color: #fff;
+  background: rgb(11, 142, 218);
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 700;
+  height: 40px;
+  /* border: 2px solid green; */
+  width: 120px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 5px;
+  transition: 0.25s;
+}
+#cnt2 a:hover {
+  width: 130px;
+  height: 40px;
+}
+/* ---------------------------------------------------------CONTACT END'S---------------------------------------------------- */
+/* ---------------------------------------------------------RESPONSIVE START'S---------------------------------------------------- */
+@media only screen and (max-width: 760px) {
+}
+
+/* ---------------------------------------------------------RESPOSIVE END'S---------------------------------------------------- */
